@@ -1,0 +1,200 @@
+a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #fff !important;
+    background-color: black !important;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 150px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+#menuToggle input[type=checkbox] {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+
+/*
+  * Just a quick hamburger
+  */
+
+.hamburgerSpan {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 0;
+    background: black;
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin-left: -150px;
+    padding: 50px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+
+/*
+  * And let's slide it in from the left
+  */
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+
+/* slider css */
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+/* Dropdown Css */
+
+.dropdownBtn {
+    padding: 6px 0px;
+    color: black;
+    border: white;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+/* Button css */
+
+.searchCartLoginBtn {
+    background-color: white;
+    border: white;
+}
+
+
+/* search field css */
+
+.searchClass {
+    border: white;
+    border-bottom: 1px solid orange;
+}
+
+
+/* text color */
+
+.color {
+    color: grey;
+}
+
+
+/* colorOptions css */
+
+.colorOptions {
+    display: block;
+    width: 13px;
+    height: 12px;
+    background-color: darkgoldenrod;
+    border-radius: 15px;
+}
+
+
+/* buy now button css */
+
+.buyNowBtn {
+    color: white;
+    background: black;
+    padding: 6px 18px;
+}
+
+
+/* Make the image fully responsive */
+
+.carousel-inner img {
+    width: 350px;
+    height: 300px;
+}

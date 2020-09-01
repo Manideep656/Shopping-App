@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shoping</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <div id="menuToggle">
+        <input type="checkbox" id="hamburger_chk_box" checked />
+        <span class="hamburgerSpan"></span>
+        <span class="hamburgerSpan"></span>
+        <span class="hamburgerSpan"></span>
+        <ul id="menu">
+            <p class="color">Filter By</p>
+            <div style="widows: 100%;;">
+                <select class="dropdownBtn">
+                      <option value="0">Collections</option>
+                      <option value="1">Sofa</option>
+                      <option value="2">Coffee table</option>
+                      <option value="3">Decorative pillows</option>
+                    </select>
+            </div>
+            <div style="widows: 100%;;">
+                <select class="dropdownBtn">
+                      <option value="0">Color</option>
+                      <option value="1">Purple</option>
+                      <option value="2">Black</option>
+                      <option value="3">grey</option>
+                    </select>
+            </div>
+            <div style="widows: 100%;;">
+                <select class="dropdownBtn">
+                      <option value="0">Category</option>
+                      <option value="1">Fabric</option>
+                      <option value="2">Leather</option>
+                      <option value="3">Foam</option>
+                    </select>
+            </div>
+            <h4>Price Range</h4>
+            <div class="slidecontainer">
+                <input type="range" min="1000" max="10000" value="50" class="slider" id="myrange"><br>
+                <p>Value: <span id="value_span"></span></p>
+            </div>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <br><br>
+            <li><a data-toggle="pill" href="#home">HOME</a></li>
+            <li><a data-toggle="pill" href="#shop">SHOP</a></li>
+            <li><a data-toggle="pill" href="#magazine">MAGAZINE</a></li>
+            <span style="float: right;">
+            <button type="submit" class="searchCartLoginBtn" id="search_btn"><i class="fa fa-search"></i></button>
+            <input type="text" class="searchClass" placeholder="Search.." name="search" value="living room">
+            <button type="submit" class="searchCartLoginBtn"><i class='fas fa-shopping-cart'></i></button>
+            <button type="submit" class="searchCartLoginBtn">Login</i></button> 
+        </span>
+        </ul>
+
+        <div class="container" style="width: 1000px;">
+            <br><br>
+            <div id="images_div">
+                <div class="col-md-3">
+                    <img src="images/ruya sofa set.jpg" alt="Workplace" usemap="#workmap" width="200" height="200">
+                    <p><strong>Ruya Sofa set</strong></p>
+                    <span class="color">Lounge</span>
+                    <span style="float: right;">$12000</span>
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span style="float: right;"><button type="submit" class="searchCartLoginBtn"><i class='fas fa-shopping-cart'></i></button></span>
+                    <map name="workmap">
+                <area shape="rect" coords="0,0,200,200" alt="sofa" data-toggle="pill" href="#sofa">
+              </map>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/ruya sofa set.jpg" alt="Workplace" usemap="#workmap" width="200" height="200">
+                    <p><strong>Ruya Sofa set</strong></p>
+                    <span class="color">Lounge</span>
+                    <span style="float: right;">$12000</span>
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span style="float: right;"><button type="submit" class="searchCartLoginBtn"><i class='fas fa-shopping-cart'></i></button></span>
+                    <map name="workmap">
+                <area shape="rect" coords="0,0,200,200" alt="sofa" data-toggle="pill" href="#sofa">
+              </map>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/ruya sofa set.jpg" alt="Workplace" usemap="#workmap" width="200" height="200">
+                    <p><strong>Ruya Sofa set</strong></p>
+                    <span class="color">Lounge</span>
+                    <span style="float: right;">$12000</span>
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span style="float: right;"><button type="submit" class="searchCartLoginBtn"><i class='fas fa-shopping-cart'></i></button></span>
+                    <map name="workmap">
+                <area shape="rect" coords="0,0,200,200" alt="sofa" data-toggle="pill" href="#sofa">
+              </map>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/ruya sofa set.jpg" alt="Workplace" usemap="#workmap" width="200" height="200">
+                    <p><strong>Ruya Sofa set</strong></p>
+                    <span class="color">Lounge</span>
+                    <span style="float: right;">$12000</span>
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span style="float: right;"><button type="submit" class="searchCartLoginBtn"><i class='fas fa-shopping-cart'></i></button></span>
+                    <map name="workmap">
+                <area shape="rect" coords="0,0,200,200" alt="sofa" data-toggle="pill" href="#sofa">
+              </map>
+                </div>
+            </div>
+            <!-- Tab content -->
+            <div class="tab-content">
+                <div class="tab-pane fade row" id="sofa">
+                    <div class="col-md-6">
+                        <img src="images/ruya sofa set.jpg" alt="Workplace" width="350" height="300">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="color">Ruya Sofa set</p>
+                        <h2>Scandanvian Collection</h2>
+                        <p>A statement piece for your living space, this product provides a significant amount of style. Referencing current trends, the loose fiber-filled back cushions are balanced by a refined topstitching detail on the seat and arms.
+                            This attention to detail goes beyond the profile of the collection with a sophisticated layered foam seat and spring suspension system that runs the length of the back frame.</p><br>
+                        <span class="color">Color</span>&nbsp;
+                        <span class="colorOptions"></span><br>
+                        <p class="color">Price per unit</p>
+                        <span style="font-weight: bold;font-size: large;">$12000</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><button class="buyNowBtn">Buy Now</button></span>&nbsp;&nbsp;
+                        <button type="submit" class="searchCartLoginBtn"><i class='fas fa-shopping-cart'></i></button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="home">
+                    <h1>Home Tab</h1>
+                </div>
+                <div class="tab-pane fade" id="shop">
+                    <h1>Shop Tab</h1>
+                </div>
+                <div class="tab-pane fade" id="magazine">
+                    <h1>Magazine Tab</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="main.js"></script>
