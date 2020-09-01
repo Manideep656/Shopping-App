@@ -10,15 +10,6 @@ a {
     background-color: black !important;
 }
 
-
-/* body {
-    margin: 0;
-    padding: 0;
-    background: #232323;
-    color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-} */
-
 #menuToggle {
     display: block;
     position: fixed;
@@ -39,7 +30,7 @@ a {
     color: tomato;
 }
 
-#menuToggle input {
+#menuToggle input[type=checkbox] {
     display: block;
     width: 40px;
     height: 32px;
@@ -59,7 +50,7 @@ a {
   * Just a quick hamburger
   */
 
-#menuToggle span {
+.hamburgerSpan {
     display: block;
     width: 33px;
     height: 4px;
@@ -72,60 +63,16 @@ a {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
-#menuToggle span:first-child {
-    /* transform-origin: 0% 0%; */
-}
-
-#menuToggle span:nth-last-child(2) {
-    /* transform-origin: 0% 100%; */
-}
-
-
-/* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
-
-#menuToggle input:checked~span {
-    /* opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323; */
-}
-
-
-/*
-  * But let's hide the middle one.
-  */
-
 #menuToggle input:checked~span:nth-last-child(2) {
     opacity: 0;
     background: black;
-    /* transform: rotate(0deg) scale(0.2, 0.2); */
 }
-
-
-/*
-  * Ohyeah and the last one should go the other direction
-  */
-
-#menuToggle input:checked~span:nth-last-child(2) {
-    /* transform: rotate(-45deg) translate(0, -1px); */
-}
-
-
-/*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
 
 #menu {
     position: absolute;
-    width: 260px;
+    width: 300px;
     margin-left: -150px;
-    /* margin: -100px 0 0 -50px; */
     padding: 50px;
-    /* padding-top: 125px; */
-    /* background: #ededed; */
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -146,4 +93,108 @@ a {
 
 #menuToggle input:checked~ul {
     transform: none;
+}
+
+
+/* slider css */
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+/* Dropdown Css */
+
+.dropdownBtn {
+    padding: 6px 0px;
+    color: black;
+    border: white;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+/* Button css */
+
+.searchCartLoginBtn {
+    background-color: white;
+    border: white;
+}
+
+
+/* search field css */
+
+.searchClass {
+    border: white;
+    border-bottom: 1px solid orange;
+}
+
+
+/* text color */
+
+.color {
+    color: grey;
+}
+
+
+/* colorOptions css */
+
+.colorOptions {
+    display: block;
+    width: 13px;
+    height: 12px;
+    background-color: darkgoldenrod;
+    border-radius: 15px;
+}
+
+
+/* buy now button css */
+
+.buyNowBtn {
+    color: white;
+    background: black;
+    padding: 6px 18px;
+}
+
+
+/* Make the image fully responsive */
+
+.carousel-inner img {
+    width: 350px;
+    height: 300px;
 }
